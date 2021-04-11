@@ -54,6 +54,7 @@ body {
   border: 1px solid #0fb9b1;
   border-radius: 4px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .teal-button:hover {
@@ -81,9 +82,9 @@ body {
 }
 
 .clear-button {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end;
+  align-items: flex-end; */
 }
 
 .callouts {
@@ -113,36 +114,41 @@ nav {
 }
 
 .form-container {
-  display: inline-block;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
   background-color: rgba(255,255,255,.9);
-  width: 286px;
-  height: 222px;
-  padding: 60px;
+  max-width: 326px;
+  min-height: 322px;
+  padding: 40px;
   margin: 60px;
 }
 
 .meal-container {
-  /* display: inline-block; */
-  /* display: inline-flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  flex: 1;
+  /* align-items: center; */
   background-color: rgba(255,255,255,.9);
-  width: 286px;
-  height: 222px;
-  padding: 60px;
+  max-width: 326px;
+  min-height: 322px;
+  padding: 20px;
   margin: 60px;
   text-align: center;
 }
 
 .cookpot {
-  width: 100%;
-  /* display: flex;
+  width: 40%;
+  /* display: flex; */
   justify-content: center;
-  align-items: center; */
+  padding-top: 40px;
 }
 .cookpot-only {
-  display: inline-block;
+  /* display: flex; */
+  justify-content: center;
+  min-width: 316px
 }
 
 .meal-only {

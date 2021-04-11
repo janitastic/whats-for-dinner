@@ -7,6 +7,8 @@ var dessertRadio = document.querySelector('#dessert');
 var entireMealRadio = document.querySelector('#entire-meal');
 
 // CALLOUT BUTTONS & MODIFIERS
+// var mealContainer = document.querySelector('.meal-container'),
+//     letsCookBtn = document.getElementbyID('cook');
 var letsCookBtn = document.querySelector('#cook');
 var clearBtn = document.querySelector('#clear');
 var cookpotImg = document.querySelector('#cookpot');
@@ -14,6 +16,7 @@ var cookpotImg = document.querySelector('#cookpot');
 var shouldMake = document.querySelector('#make-title');
 var mealText = document.querySelector('#meal-text');
 var entireMealText = document.querySelector('#entire-meal-text');
+
 
 // EVENT LISTENERS
 // letsCookBtn.addEventListener("click", displayMeal();
@@ -41,8 +44,9 @@ function preventDefault() {
   event.preventDefault();
 }
 
-// function hidecookPotImg(){
-//   co
+// function modifyMealContainer() {
+//   var button = this;
+//   meal.style.display = inlineBlock;
 // }
 
 // MEAL CONTAINER VIEW FUNCTIONS //
@@ -50,8 +54,8 @@ function mealView() {
   shouldMake.innerText = 'You should make:';
   cookpotImg.classList.add("hidden");
   shouldMake.classList.remove("hidden");
-  mealText.classList.remove("hidden");
   entireMealText.classList.add("hidden");
+  mealText.classList.remove("hidden");
   clearBtn.classList.remove("hidden");
 }
 
@@ -70,6 +74,7 @@ function potView() {
   mealText.classList.add("hidden");
   entireMealText.classList.add("hidden");
   clearBtn.classList.add("hidden");
+  clearRadioButtons()
 }
 
 // RANDOMIZER FUNCTIONS  //
@@ -108,4 +113,11 @@ function getRandomMeal() {
     entireMealView();
     entireMealText.innerText = `${mains[getRandomIndex(mains)]}, with a side of ${sides[getRandomIndex(sides)]}, and ${desserts[getRandomIndex(desserts)]} for dessert!`;
   }
+}
+
+function clearRadioButtons() {
+  sideRadio.checked = false;
+  mainRadio.checked = false;
+  dessertRadio.checked = false;
+  entireMealRadio.checked = false;
 }
