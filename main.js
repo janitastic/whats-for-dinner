@@ -23,7 +23,6 @@ clearBtn.addEventListener("click", potView);
 // EVENT HANDLERS
 
 function displayMeal() {
-  shouldMake.innerText = 'You should make:';
   if (sideRadio.checked) {
     getRandomSide();
   } else if (mainRadio.checked) {
@@ -32,6 +31,8 @@ function displayMeal() {
     getRandomDessert();
   } else if (entireMealRadio.checked) {
     getRandomMeal();
+  } else {
+    alert("Oops! You forgot to make a selection!")
   }
 }
 
@@ -46,6 +47,7 @@ function preventDefault() {
 
 // MEAL CONTAINER VIEW FUNCTIONS //
 function mealView() {
+  shouldMake.innerText = 'You should make:';
   cookpotImg.classList.add("hidden");
   shouldMake.classList.remove("hidden");
   mealText.classList.remove("hidden");
@@ -54,6 +56,7 @@ function mealView() {
 }
 
 function entireMealView() {
+  shouldMake.innerText = 'You should make:';
   cookpotImg.classList.add("hidden");
   shouldMake.classList.remove("hidden");
   mealText.classList.add("hidden");
