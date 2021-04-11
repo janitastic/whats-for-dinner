@@ -6,28 +6,67 @@ frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253 */
 
-/* HEADERS */
+/*
+--------------------------------------------------------
+HEADERS
+--------------------------------------------------------
+*/
 
 h1 {
   margin: 20px;
 }
 
 h2 {
-  font-size: 120%;
+  font-size: 140%;
 }
 
 h3 {
-
+  font-size: 140%;
 }
 
-/* BODY DEFAULT */
+/*
+--------------------------------------------------------
+DEFAULTS
+--------------------------------------------------------
+*/
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-.meal-text {
-  font-size: 200%;
-  margin-top: 0px;
+main {
+  background-image: url(./assets/burger-friends.jpg);
+  background-size: cover;
+}
+
+nav {
+  background-color: #0fb9b1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.callouts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 160px;
+}
+
+/*
+--------------------------------------------------------
+FORM CONTAINER
+--------------------------------------------------------
+*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255,255,255,.9);
+  min-height: 246px;
+  min-width: 326px;
+  padding: 40px;
+  margin: 60px;
 }
 
 .required {
@@ -40,12 +79,8 @@ body {
   padding: 5px;
 }
 
-.radio {
-
-}
-
-.hidden {
-  display: none;
+input[type=radio] {
+    height: 8%;
 }
 
 .teal-button {
@@ -64,6 +99,58 @@ body {
   border-radius: 4px;
 }
 
+/*
+--------------------------------------------------------
+MEAL CONTAINER
+--------------------------------------------------------
+*/
+
+.meal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255,255,255,.9);
+  max-width: 356px;
+  min-width: 226px;
+  min-height: 322px;
+  padding: 20px;
+  margin: 60px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.cookpot-only {
+  /* display: flex; */
+  justify-content: center;
+  min-width: 316px
+}
+
+.cookpot {
+  width: 40%;
+  /* display: flex; */
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.meal-only {
+  text-align: center;
+  padding: 20px;
+  min-width: 326px;
+}
+
+.make-title {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.meal-text {
+  font-size: 200%;
+  margin-top: 0px;
+}
+
 .gray-button {
   background-color: rgba(149, 165, 166, .8);
   padding: 8px 12px;
@@ -79,86 +166,4 @@ body {
   color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
-}
-
-.clear-button {
-  /* display: flex; */
-  /* justify-content: flex-end;
-  align-items: flex-end; */
-}
-
-.callouts {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-main {
-  background-image: url(./assets/burger-friends.jpg);
-  background-size: cover;
-  /* height: 100%;
-  display: flex;
-  justify-content: space-around; */
-}
-
-.make-title {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-/* NAV BAR */
-nav {
-  background-color: #0fb9b1;
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  background-color: rgba(255,255,255,.9);
-  max-width: 326px;
-  min-height: 322px;
-  padding: 40px;
-  margin: 60px;
-}
-
-/* form {
-  padding: 40px;
-  min-width: 316px;
-} */
-
-.meal-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  /* align-items: center; */
-  background-color: rgba(255,255,255,.9);
-  max-width: 356px;
-  min-height: 322px;
-  padding: 20px;
-  margin: 60px;
-  text-align: center;
-}
-
-.cookpot {
-  width: 40%;
-  /* display: flex; */
-  justify-content: center;
-  padding-top: 40px;
-}
-.cookpot-only {
-  /* display: flex; */
-  justify-content: center;
-  min-width: 316px
-}
-
-.meal-only {
-  /* margin: 60px; */
-  /* position: relative; */
-  text-align: center;
-  padding: 20px;
 }
