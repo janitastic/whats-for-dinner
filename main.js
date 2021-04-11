@@ -12,8 +12,8 @@ var entireMealRadio = document.querySelector('#entire-meal');
 var letsCookBtn = document.querySelector('#cook');
 var clearBtn = document.querySelector('#clear');
 var cookpotImg = document.querySelector('#cookpot');
-// var shouldMake = document.querySelector('.meal-only');
 var shouldMake = document.querySelector('#make-title');
+// var shouldMake = document.querySelector('.meal-only');
 var mealText = document.querySelector('#meal-text');
 var entireMealText = document.querySelector('#entire-meal-text');
 
