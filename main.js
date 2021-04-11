@@ -1,4 +1,6 @@
-// VARIABLES //
+// --------------------------------------------------------
+// VARIABLES
+// --------------------------------------------------------
 
 // RADIO BUTTONS
 var sideRadio = document.querySelector('#side');
@@ -7,23 +9,23 @@ var dessertRadio = document.querySelector('#dessert');
 var entireMealRadio = document.querySelector('#entire-meal');
 
 // CALLOUT BUTTONS & MODIFIERS
-// var mealContainer = document.querySelector('.meal-container'),
-//     letsCookBtn = document.getElementbyID('cook');
 var letsCookBtn = document.querySelector('#cook');
 var clearBtn = document.querySelector('#clear');
 var cookpotImg = document.querySelector('#cookpot');
 var shouldMake = document.querySelector('#make-title');
-// var shouldMake = document.querySelector('.meal-only');
 var mealText = document.querySelector('#meal-text');
 var entireMealText = document.querySelector('#entire-meal-text');
 
+// --------------------------------------------------------
+// EVENT LISTENERS AND EVENT HANDLERS
+// --------------------------------------------------------
 
-// EVENT LISTENERS
-// letsCookBtn.addEventListener("click", displayMeal();
 letsCookBtn.addEventListener("click", displayMeal);
 clearBtn.addEventListener("click", potView);
 
-// EVENT HANDLERS
+// --------------------------------------------------------
+// FUNCTIONS
+// --------------------------------------------------------
 
 function displayMeal() {
   if (sideRadio.checked) {
@@ -39,17 +41,10 @@ function displayMeal() {
   }
 }
 
-// FUNCTIONS //
 function preventDefault() {
   event.preventDefault();
 }
 
-// function modifyMealContainer() {
-//   var button = this;
-//   meal.style.display = inlineBlock;
-// }
-
-// MEAL CONTAINER VIEW FUNCTIONS //
 function mealView() {
   shouldMake.innerText = 'You should make:';
   cookpotImg.classList.add("hidden");
@@ -76,8 +71,6 @@ function potView() {
   clearBtn.classList.add("hidden");
   clearRadioButtons()
 }
-
-// RANDOMIZER FUNCTIONS  //
 
 function getRandomIndex(array) {
   return Math.floor(Math.random()*array.length);
