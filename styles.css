@@ -25,6 +25,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.meal-text {
+  font-size: 200%;
+  margin-top: 0px;
+}
+
 .required {
   color: #ee5253;
 }
@@ -54,6 +59,8 @@ body {
 .teal-button:hover {
   background-color: #0fb9b1;
   color: #fff;
+  border: 1px solid #0fb9b1;
+  border-radius: 4px;
 }
 
 .gray-button {
@@ -63,11 +70,14 @@ body {
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+  float: right;
 }
 
 .gray-button:hover {
   background-color: #95a5a6;
   color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .clear-button {
@@ -90,8 +100,9 @@ main {
   justify-content: space-around; */
 }
 
-p.make-title {
+.make-title {
   font-style: italic;
+  margin-bottom: 10px;
 }
 
 /* NAV BAR */
@@ -109,27 +120,33 @@ nav {
   height: 222px;
   padding: 60px;
   margin: 60px;
-  /* margin-top: 60px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px; */
 }
 
 .meal-container {
-  display: flex;
+  /* display: inline-block; */
+  /* display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: rgba(255,255,255,.9);
   width: 286px;
   height: 222px;
   padding: 60px;
   margin: 60px;
-  /* margin-top: 60px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px; */
+  text-align: center;
 }
 
 .cookpot {
-  width: 40%;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.cookpot-only {
+  display: inline-block;
+}
+
+.meal-only {
+  /* margin: 60px; */
+  position: relative;
+  text-align: center;
 }
