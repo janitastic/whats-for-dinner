@@ -22,6 +22,10 @@ Then click on **Let's Cook** and we'll generate a random option from our recipe 
 
 ---
 
+## Contributors
+- Turing School of Software & Design Frontend student, Jani Palomino
+- Comp provided by Turing Instructors
+
 ## Future Feature Addtions
 
 - Log in to -
